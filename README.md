@@ -40,3 +40,9 @@ http://localhost:8081
 ### Result
 
 The Nginx Docker container was successfully provisioned using Terraform and later destroyed successfully.
+
+![alt text](<Screenshot 2026-10-07 001812.png>)
+![alt text](<Screenshot 2026-10-07 001840.png>)
+![alt text](<Screenshot 2026-10-07 002637.png>)
+![alt text](<Screenshot 2026-10-07 002739.png>)
+![alt text](<Screenshot 2026-10-07 002825.png>)
