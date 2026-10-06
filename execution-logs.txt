@@ -1,0 +1,84 @@
+TASK 3: Infrastructure as Code (IaC) with Terraform
+====================================================
+
+1. Terraform Version
+--------------------
+terraform --version
+
+Terraform v1.16.5
+on windows_amd64
+
+
+2. Terraform Initialization
+---------------------------
+terraform init
+
+Result:
+Terraform has been successfully initialized!
+
+
+3. Terraform Validation
+-----------------------
+terraform validate
+
+Result:
+Success! The configuration is valid.
+
+
+4. Terraform Plan
+-----------------
+terraform plan
+
+Result:
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+
+5. Terraform Apply
+------------------
+terraform apply
+
+Result:
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Docker container:
+terraform-nginx
+
+Port:
+8081 -> 80
+
+
+6. Docker Verification
+----------------------
+docker ps
+
+Container:
+terraform-nginx
+
+Port:
+0.0.0.0:8081->80/tcp
+
+
+7. Terraform State
+------------------
+terraform state list
+
+Result:
+docker_container.nginx
+docker_image.nginx
+
+
+8. Nginx Verification
+---------------------
+URL:
+http://localhost:8081
+
+Result:
+Nginx Welcome Page displayed successfully.
+
+
+9. Terraform Destroy
+--------------------
+terraform destroy
+
+Result:
+Destroy complete! Resources: 2 destroyed.
